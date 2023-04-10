@@ -1,9 +1,1 @@
-- task: AzurePowerShell@5
-  inputs:
-    azureSubscription: 'Visual Studio Enterprise Subscription(dfd82276-d16b-4037-a335-08d751df6519)'
-    ScriptType: 'InlineScript'
-    Inline: |
-      # You can write your azure powershell scripts inline here. 
-      # You can also pass predefined and custom variables to this script using arguments
-      
-      az group create --name “Demo-rg” --location uksouth
+      az group create --name demoResourceGroup --location westus
