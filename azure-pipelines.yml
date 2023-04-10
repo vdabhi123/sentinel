@@ -1,1 +1,6 @@
-      az group create --name demoResourceGroup --location westus
+- task: AzurePowerShell@5
+  inputs:
+    azureSubscription: 'Visual Studio Enterprise Subscription(dfd82276-d16b-4037-a335-08d751df6519)'
+    ScriptType: 'InlineScript'
+    Inline: 'az group create --name demoResourceGroup --location westus'
+    pwsh: true
